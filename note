@@ -1,0 +1,10 @@
+    <div class="card-columns" *ngIf="categoryProducts">
+        <div class="card" *ngFor="let product of products" (click)="popupProduct(product)"
+            style="margin: 5px; max-width: 350px;">
+            <img class="card-img-top" src="{{GlobalyPathInto}}/products-imgs/{{product.img}}" alt="">
+            <div class="card-body">
+                <h5 class="card-title">{{product.price}} ₪</h5>
+                <p class="card-text">{{product.product_name}}</p>
+            </div>
+        </div>
+    </div>

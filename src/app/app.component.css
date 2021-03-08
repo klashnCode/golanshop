@@ -1,0 +1,54 @@
+nav{
+    color: #eeeeee;
+}
+article {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+#profil{
+    z-index: 999999999;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 5px 5px 0 0;
+    min-width: 150px;
+}
+#profil:hover{
+    background-color: #3a4750;
+    
+    cursor: pointer;
+}
+#nameProfil{
+    margin-left: 10px;
+}
+#disconnect{
+    position: absolute;
+    background-color: #17252A;
+    width: 150px;
+    padding: 10px 15px;
+    margin-left: -15px;
+    color: white;
+    top: 60px;
+    border-top: 3px #17252A solid;
+    border-radius: 0 0 5px 5px;
+    display: none;
+    text-align: center;
+}
+#disconnect:hover{
+    background-color: #17252A;
+    color: white;
+    cursor: pointer;
+}
+#profil:hover #disconnect{
+    display: block;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background: #3a4660;
+    color: #fff;
+}
